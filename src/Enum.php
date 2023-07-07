@@ -312,7 +312,7 @@ abstract class Enum implements \JsonSerializable, \Stringable
      * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
      */
     #[\ReturnTypeWillChange]
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->getValue();
     }
